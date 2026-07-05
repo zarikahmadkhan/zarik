@@ -1,5 +1,6 @@
 import type { AppData, OrbitEvent, Person, SocialRep } from "@/lib/types";
 import { emptyAppData } from "./adapter";
+import { generateWeeklySocialPlan } from "@/lib/ai/mock/plans";
 
 // Jersey City / NYC seed data. Recurring events weighted, faith/community
 // events first-class, nothing bar-centric.
@@ -306,7 +307,7 @@ const seedReps: SocialRep[] = [
 
 export function seedAppData(): AppData {
   const base = emptyAppData();
-  return {
+  const data: AppData = {
     ...base,
     mode: "demo",
     profile: {
@@ -360,4 +361,8 @@ export function seedAppData(): AppData {
       },
     ],
   };
+  if (data.profile) {
+    data.plans = [generateWeeklySocialPlan(data.profile, data.events)];
+  }
+  return data;
 }

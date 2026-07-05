@@ -44,7 +44,7 @@ const stopDoing = [
 
 const avoidancePatterns = {
   planNoCommit: "You added {n} events but committed to none. Adding is scouting, not going.",
-  noFollowUp: "You met {n} people this week and followed up with none. That is exactly where weak ties die.",
+  noFollowUp: "You met {people} this week and followed up with none. That is exactly where weak ties die.",
   lowFrictionOnly: "Every completed rep this week was solo-friendly. Add one thing with actual conversation potential.",
   skipHeavy: "You skipped more than you attended this week. No shame — but the next event on your list is the one to protect.",
   planningLoop: "You keep planning instead of attending. Pick the single easiest event and go.",
@@ -82,7 +82,10 @@ export function generateWeeklyReview(data: AppData): WeeklyReview {
   ).length;
   let pattern: string;
   if (met.length > 0 && sent.length === 0) {
-    pattern = avoidancePatterns.noFollowUp.replace("{n}", String(met.length));
+    pattern = avoidancePatterns.noFollowUp.replace(
+      "{people}",
+      met.length === 1 ? "one person" : `${met.length} people`
+    );
   } else if (interestedCount >= 4 && attended.length === 0) {
     pattern = avoidancePatterns.planNoCommit.replace(
       "{n}",

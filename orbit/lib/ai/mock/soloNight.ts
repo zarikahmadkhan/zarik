@@ -49,13 +49,33 @@ const bold: Activity[] = [
   { title: "Class you'd never admit you wanted", steps: ["Dance, pottery wheel, stand-up open mic prep — book it", "Introduce yourself to two people by name", "Book the second class before you leave"], cost: 35, difficulty: 5, conversation: 4, vibes: ["creative", "adventurous"] },
 ];
 
-const exitRules = [
+// Exit rules split by whether the activity actually involves other people —
+// a solo photo walk should never get "leave after one conversation."
+const soloExitRules = [
+  "If it's bad after 45 minutes, you're free to leave — 45 minutes is a completed rep either way.",
+  "Stay until you've done the micro-challenge. Then leaving is a win, not a retreat.",
+  "Give yourself the full planned time. If you're still restless at the halfway point, head home without guilt.",
+  "No minimum tonight beyond getting out the door. Out is the rep.",
+  "Set a leave time before you go, and keep it. Ending on schedule beats drifting home early.",
+];
+
+const socialExitRules = [
   "If it's bad after 45 minutes, you're free to leave — 45 minutes is a completed rep either way.",
   "You can leave after one full conversation or one hour, whichever comes first.",
   "Stay until you've done the micro-challenge. Then leaving is a win, not a retreat.",
   "Give it until the halfway point of the event. If you're still drained, go home without guilt.",
   "Leave whenever you want — but say goodbye to one person on the way out.",
   "If you're anxious at the door, go in for 15 minutes. You can leave after that. You usually won't.",
+];
+
+const soloMicroChallenges = [
+  "Stay at least 45 minutes.",
+  "Order or ask for something out loud instead of pointing or defaulting.",
+  "Say one unnecessary friendly thing to a staff member or passerby.",
+  "Sit or stand somewhere central, not at the edge.",
+  "Leave your phone in your pocket for the first fifteen minutes.",
+  "Find out one thing about this place you didn't know — hours, history, a regular's name.",
+  "Before heading home, note one spot nearby you'd come back to with a person.",
 ];
 
 const microChallenges = [
@@ -126,6 +146,7 @@ function toPlan(
   inputs: SoloNightInputs,
   seed: (string | number)[]
 ): SoloNightPlan {
+  const isSolo = a.conversation <= 2;
   return {
     tier,
     title: a.title,
@@ -133,8 +154,8 @@ function toPlan(
     costEstimate: a.cost === 0 ? "Free" : `~$${a.cost}`,
     socialDifficulty: a.difficulty,
     conversationPotential: a.conversation,
-    exitRule: pick(exitRules, [...seed, "exit", a.title]),
-    microChallenge: pick(microChallenges, [...seed, "challenge", a.title]),
+    exitRule: pick(isSolo ? soloExitRules : socialExitRules, [...seed, "exit", a.title]),
+    microChallenge: pick(isSolo ? soloMicroChallenges : microChallenges, [...seed, "challenge", a.title]),
     reflectionPrompt: pick(reflectionPrompts, [...seed, "reflect", a.title]),
   };
 }

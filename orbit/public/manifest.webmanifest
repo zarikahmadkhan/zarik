@@ -1,0 +1,17 @@
+{
+  "name": "Orbit",
+  "short_name": "Orbit",
+  "description": "A private operating system for rebuilding your social life.",
+  "start_url": "/app",
+  "display": "standalone",
+  "background_color": "#0e0f11",
+  "theme_color": "#0e0f11",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

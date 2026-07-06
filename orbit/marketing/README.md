@@ -35,6 +35,6 @@ Every document in this folder obeys these. They come from `CLAUDE.md` and the ma
 | `15-competitive-positioning.md` | Orbit vs. Meetup, Bumble BFF, CRMs, etc. |
 | `16-founder-led.md` | Building-in-public strategy |
 | `17-plg-hooks.md` | Shareable outputs that don't violate privacy |
-| `19-definition-of-done.md` | The 20-item marketing DoD checklist |
+| `18-definition-of-done.md` | The 20-item marketing DoD checklist |
 
 SEO guardrails live inside `05-seo-strategy.md`. App Store marketing copy lives in `../app-store-readiness/` to keep all store-listing material in one place.

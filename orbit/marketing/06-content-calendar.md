@@ -43,6 +43,27 @@ Tone across everything: direct, clear, adult, slightly contrarian. Never cheesy,
 
 Reddit is in the mix but **cautiously**. Never drop links cold. Participate genuinely in r/introvert, r/[city], r/socialskills, divorce-recovery subs; mention Orbit only when someone is explicitly asking for a tool and it genuinely fits, and disclose you built it. One spammy post can burn a community permanently. When in doubt, don't.
 
+## Short social post bank (X/threads — draw 3 per week)
+
+One idea per post, no threads required. Rotate; each maps to a pillar (A–E in `02-messaging-pillars.md`):
+
+1. "You don't have a loneliness problem. You have a logistics problem." (C)
+2. "The number of events you've saved is not a social life. The number you attended twice might be." (D)
+3. "Adult friendship rule: the follow-up you send within 24 hours is worth five you compose in your head." (B)
+4. "Exit rule for any event: 45 minutes, one conversation, then you're free. Knowing you can leave is what gets you in the door." (A)
+5. "Nobody waits to feel like training before the gym. Stop waiting to feel social before going out." (C)
+6. "Become a regular somewhere. It's the closest thing to a cheat code adult friendship has." (D)
+7. "Two unanswered messages = stop. Respect their silence and spend the energy on ties that answer." (B)
+8. "Your best social nights probably happened at things that repeat weekly. Check. Then act on it." (D)
+9. "A private tracker of who you met beats a perfect memory and a dead phone contact named 'Mike run club'." (E)
+10. "The minimum viable outing counts. Out of the apartment, somewhere public, 30 minutes. That's a rep." (A)
+11. "Social apps want you performing. A social *system* wants you showing up. Different products." (E)
+12. "'We should hang out sometime' is where plans go to die. Name a day or let it go." (B)
+
+## Weekly user story / scenario (1 per week)
+
+Until real user stories exist (Phase 1+), publish clearly-fictional scenarios — "meet Sam, eight months in a new city…" — walking one persona through one loop (event → conversation → follow-up). Label them as illustrative. Swap in real stories (with permission) as they arrive; the fictional ones retire immediately after.
+
 ## Short-form video scripts (reusable hooks)
 
 1. "You don't have a loneliness problem. You have a logistics problem." (30s, the reframe)

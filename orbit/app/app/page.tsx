@@ -66,7 +66,12 @@ export default function DashboardPage() {
   const currentPlan = [...data.plans]
     .filter((p) => p.kind === "seven-day")
     .sort((a, b) => b.createdAt.localeCompare(a.createdAt))[0];
-  const todayItem = currentPlan?.items.find((i) => i.day === today);
+  const soloTonight = [...data.plans]
+    .filter((p) => p.kind === "solo-night")
+    .sort((a, b) => b.createdAt.localeCompare(a.createdAt))
+    .flatMap((p) => p.items)
+    .find((i) => i.day === today);
+  const todayItem = soloTonight ?? currentPlan?.items.find((i) => i.day === today);
 
   const upcoming = data.events
     .filter((e) => e.status === "planned" || e.status === "interested")

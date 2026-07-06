@@ -4,10 +4,12 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { newId, useAppData } from "@/lib/storage";
 import { getAI } from "@/lib/ai";
+import UpgradeModal from "@/components/UpgradeModal";
 
 export default function ReviewPage() {
   const { data, loaded, update } = useAppData();
   const [completed, setCompleted] = useState(false);
+  const [showUpgrade, setShowUpgrade] = useState(false);
 
   const ai = getAI();
   const review = useMemo(
@@ -162,6 +164,31 @@ export default function ReviewPage() {
         >
           Mark review complete
         </button>
+      )}
+
+      {/* Advanced review — mocked paid edge */}
+      <div className="card mt-4 border-dashed border-ink-600 opacity-80">
+        <p className="text-xs font-medium uppercase tracking-widest text-clay-300">
+          Advanced review · Pro
+        </p>
+        <p className="mt-1 text-sm text-fog-400">
+          Energy-return by setting, follow-up conversion, and which event
+          types actually produce friends for you.
+        </p>
+        <button
+          type="button"
+          onClick={() => setShowUpgrade(true)}
+          className="btn-secondary mt-3"
+        >
+          See what&rsquo;s in it
+        </button>
+      </div>
+
+      {showUpgrade && (
+        <UpgradeModal
+          trigger="advanced-review"
+          onClose={() => setShowUpgrade(false)}
+        />
       )}
     </section>
   );

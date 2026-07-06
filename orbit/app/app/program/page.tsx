@@ -1,7 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import { useAppData } from "@/lib/storage";
 import { getAI } from "@/lib/ai";
+import UpgradeModal from "@/components/UpgradeModal";
 
 const weekThemes = [
   { range: [1, 7], name: "Week 1 — Leave the apartment" },
@@ -23,8 +25,12 @@ const recoveryLines = [
   "Restarting is a trap. Continue from today.",
 ];
 
+// Free tier covers week 1; continuation is the mocked paid edge.
+const FREE_DAYS = 7;
+
 export default function ProgramPage() {
   const { data, loaded, update } = useAppData();
+  const [showUpgrade, setShowUpgrade] = useState(false);
   const ai = getAI();
 
   if (!loaded) return <p className="text-fog-400">Loading…</p>;
@@ -75,6 +81,10 @@ export default function ProgramPage() {
   const behind = missedCount >= 2;
 
   async function setDone(day: number, completed: boolean) {
+    if (day > FREE_DAYS && completed) {
+      setShowUpgrade(true);
+      return;
+    }
     await update((d) => ({
       ...d,
       program: d.program
@@ -90,6 +100,12 @@ export default function ProgramPage() {
 
   return (
     <section>
+      {showUpgrade && (
+        <UpgradeModal
+          trigger="program-continuation"
+          onClose={() => setShowUpgrade(false)}
+        />
+      )}
       <h1 className="text-2xl font-semibold">30-day social rebuild</h1>
       <p className="mt-1 text-sm text-fog-500">{themeFor(currentDay)}</p>
 
@@ -171,6 +187,9 @@ export default function ProgramPage() {
                     {a.title}
                     {isToday && (
                       <span className="ml-2 text-xs text-moss-300">today</span>
+                    )}
+                    {a.day > FREE_DAYS && (
+                      <span className="ml-2 text-xs text-clay-300">pro</span>
                     )}
                   </p>
                   {(isToday || isPast) && (

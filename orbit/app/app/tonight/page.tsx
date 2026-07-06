@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { newId, useAppData } from "@/lib/storage";
+import UpgradeModal from "@/components/UpgradeModal";
 import {
   getAI,
   type Mood,
@@ -99,10 +100,16 @@ export default function TonightPage() {
   const [neighborhood, setNeighborhood] = useState("");
   const [plans, setPlans] = useState<SoloNightPlan[] | null>(null);
   const [addedTier, setAddedTier] = useState<string | null>(null);
+  const [showUpgrade, setShowUpgrade] = useState(false);
 
   const profile = data?.profile ?? null;
+  const atFreeLimit = (data?.soloPlansUsedThisMonth ?? 0) >= 3;
 
   function generate() {
+    if (atFreeLimit) {
+      setShowUpgrade(true);
+      return;
+    }
     const inputs: SoloNightInputs = {
       mood,
       energy,
@@ -149,9 +156,20 @@ export default function TonightPage() {
 
   return (
     <section>
+      {showUpgrade && (
+        <UpgradeModal
+          trigger="solo-plan-limit"
+          onClose={() => setShowUpgrade(false)}
+        />
+      )}
       <h1 className="text-2xl font-semibold">Tonight</h1>
       <p className="mt-1 text-sm text-fog-400">
         Answer honestly, get three plans. The minimum one always counts.
+        {atFreeLimit && (
+          <span className="mt-1 block text-clay-300">
+            You&rsquo;ve used your 3 free solo plans this month.
+          </span>
+        )}
       </p>
 
       <div className="card mt-4 space-y-4">

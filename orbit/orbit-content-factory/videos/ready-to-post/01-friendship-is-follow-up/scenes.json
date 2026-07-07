@@ -1,0 +1,42 @@
+[
+  {
+    "text": "Nobody tells you this about\nmaking friends after 30.",
+    "seconds": 3.5,
+    "big": true
+  },
+  {
+    "text": "It's not charisma.\nIt's not confidence.",
+    "seconds": 3
+  },
+  {
+    "text": "It's *follow-up*.",
+    "seconds": 2.5,
+    "big": true
+  },
+  {
+    "text": "You already meet people\nyou like.",
+    "sub": "At work. At the gym. At events.",
+    "seconds": 3.5
+  },
+  {
+    "text": "Then you both say\n“we should hang out”",
+    "sub": "and neither of you texts.",
+    "seconds": 4,
+    "register": "mirror"
+  },
+  {
+    "text": "The friendship didn't fail.",
+    "sub": "It just never got a *second interaction*.",
+    "seconds": 4
+  },
+  {
+    "text": "Send one message this week\nto someone you already met.",
+    "sub": "That's the whole skill.",
+    "seconds": 4.5
+  },
+  {
+    "text": "Try the *7-day plan*.",
+    "sub": "Link in bio.",
+    "seconds": 3
+  }
+]

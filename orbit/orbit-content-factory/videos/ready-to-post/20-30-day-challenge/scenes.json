@@ -1,0 +1,42 @@
+[
+  {
+    "text": "The 30-day\nsocial rebuild challenge:",
+    "seconds": 3.5,
+    "big": true
+  },
+  {
+    "text": "Week 1: leave the apartment.",
+    "sub": "Solo-but-public counts. Motion over meaning.",
+    "seconds": 4.5
+  },
+  {
+    "text": "Week 2: start conversations.",
+    "sub": "One question per outing. Learn one name.",
+    "seconds": 4.5
+  },
+  {
+    "text": "Week 3: follow up.",
+    "sub": "Capture the weak tie. Send the message.",
+    "seconds": 4.5
+  },
+  {
+    "text": "Week 4: build cadence.",
+    "sub": "Pick your anchors. Become a regular.",
+    "seconds": 4.5
+  },
+  {
+    "text": "Miss a day? *Continue.*",
+    "sub": "Restarting is a trap.",
+    "seconds": 4,
+    "register": "mirror"
+  },
+  {
+    "text": "30 days. One ordinary rep at a time.",
+    "seconds": 3.5
+  },
+  {
+    "text": "Join the *Orbit beta*.",
+    "sub": "The app runs the whole program. Link in bio.",
+    "seconds": 4
+  }
+]

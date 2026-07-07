@@ -1,0 +1,1 @@
+Every new event starts you at stranger-zero. — 10 random events = 10 cold starts. 10 visits to 2 anchors = 2 growing reputations.

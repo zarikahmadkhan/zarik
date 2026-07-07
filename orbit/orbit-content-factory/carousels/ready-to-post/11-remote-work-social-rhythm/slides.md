@@ -1,0 +1,40 @@
+# Remote work and lost social rhythm
+
+
+
+## Slide 1
+**Remote work broke your social rhythm**
+
+Quietly. Here's the mechanism.
+
+## Slide 2
+**The office was ambient social infrastructure**
+
+Hallway hellos. Lunch invites. Someone's birthday cake. Zero effort. Daily reps.
+
+## Slide 3
+**You never counted them because they were free**
+
+5-10 micro-interactions a day, delivered by the building.
+
+## Slide 4
+**Remote deleted them without a replacement**
+
+Slack is not contact. Meetings are not conversation.
+
+## Slide 5
+**The fix is designed, not wished for**
+
+What the office did automatically, you now do deliberately.
+
+## Slide 6
+**The design:**
+
+2 recurring anchors a week. 1 solo-but-public work session. 1 follow-up a week. That's the whole replacement.
+
+## Slide 7
+**Design it once, run it weekly**
+
+Orbit is the system that runs it.
+
+_Start with one rep → link in bio_

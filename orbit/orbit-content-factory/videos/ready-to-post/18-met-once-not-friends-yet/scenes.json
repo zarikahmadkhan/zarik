@@ -1,0 +1,39 @@
+[
+  {
+    "text": "Gentle reality check:",
+    "seconds": 2.5,
+    "big": true
+  },
+  {
+    "text": "The person you met once\nis not your friend *yet*.",
+    "seconds": 4
+  },
+  {
+    "text": "One great conversation is\na doorway, not a relationship.",
+    "seconds": 4
+  },
+  {
+    "text": "Don't over-invest:\nno essays, no intensity.",
+    "seconds": 3.5,
+    "register": "mirror"
+  },
+  {
+    "text": "Don't under-invest either:\nsilence closes the door.",
+    "seconds": 3.5,
+    "register": "mirror"
+  },
+  {
+    "text": "The move is *light + repeated*:",
+    "sub": "low-pressure message, shared setting,\nsee them again.",
+    "seconds": 5
+  },
+  {
+    "text": "Keep it casual.\nLet the reps do the work.",
+    "seconds": 3.5
+  },
+  {
+    "text": "Start with *one social rep*.",
+    "sub": "Link in bio.",
+    "seconds": 3
+  }
+]

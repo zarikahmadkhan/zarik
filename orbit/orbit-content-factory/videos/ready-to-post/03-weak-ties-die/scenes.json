@@ -1,0 +1,36 @@
+[
+  {
+    "text": "The person you clicked with\nlast week?",
+    "seconds": 3,
+    "big": true
+  },
+  {
+    "text": "They're not going to\nfollow up with you.",
+    "seconds": 3.5,
+    "register": "mirror"
+  },
+  {
+    "text": "Not because they don't like you.",
+    "sub": "Because they're doing what you're doing:\nassuming it'll happen on its own.",
+    "seconds": 5
+  },
+  {
+    "text": "Weak ties have a *half-life*.",
+    "sub": "Every silent week cuts the odds.",
+    "seconds": 4
+  },
+  {
+    "text": "One low-pressure message.",
+    "sub": "“Good meeting you. I'm going again\nnext week — you in?”",
+    "seconds": 5
+  },
+  {
+    "text": "That's it. That's how\nacquaintances become friends.",
+    "seconds": 4
+  },
+  {
+    "text": "Start with *one social rep*.",
+    "sub": "Link in bio.",
+    "seconds": 3
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "text": "Permission slip:",
+    "seconds": 2.5,
+    "big": true
+  },
+  {
+    "text": "45 minutes *counts*.",
+    "seconds": 3,
+    "big": true
+  },
+  {
+    "text": "You don't owe any event\nyour whole night.",
+    "seconds": 3.5
+  },
+  {
+    "text": "Go. Stay 45 minutes.\nSay one hello. Leave.",
+    "seconds": 4
+  },
+  {
+    "text": "That's a complete rep.",
+    "sub": "Not a partial one. Complete.",
+    "seconds": 4
+  },
+  {
+    "text": "The dread shrinks when\nthe commitment does.",
+    "seconds": 4
+  },
+  {
+    "text": "Save this for Friday night.",
+    "seconds": 3
+  }
+]

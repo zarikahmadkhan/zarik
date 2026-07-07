@@ -1,0 +1,35 @@
+[
+  {
+    "text": "You don't need\nmore event options.",
+    "seconds": 3,
+    "big": true
+  },
+  {
+    "text": "You have Meetup.\nYou have Eventbrite.\nYou have 12 open tabs.",
+    "seconds": 4
+  },
+  {
+    "text": "And you're still home\non Friday night.",
+    "seconds": 3,
+    "register": "mirror"
+  },
+  {
+    "text": "Because discovery\nwas never the problem.",
+    "seconds": 3
+  },
+  {
+    "text": "You need a *loop*:",
+    "sub": "Pick one thing. Go. Talk to one person.\nFollow up. *Repeat*.",
+    "seconds": 5.5
+  },
+  {
+    "text": "Run the loop weekly\nand a social life compounds.",
+    "sub": "Browse events nightly and nothing does.",
+    "seconds": 5
+  },
+  {
+    "text": "Try the *7-day plan*.",
+    "sub": "Link in bio.",
+    "seconds": 3
+  }
+]

@@ -1,0 +1,50 @@
+# How Orbit works
+
+
+
+## Slide 1
+**How Orbit works**
+
+A private system for rebuilding your social life. 8 slides.
+
+## Slide 2
+**Tonight**
+
+Three plans matched to your mood, energy, and budget — minimum viable, standard, bold. The easy one still counts.
+
+## Slide 3
+**Events, scored**
+
+Recurring, conversation-friendly events rise to the top. Arrival strategy, openers, and an exit rule for each one.
+
+## Slide 4
+**People, tracked privately**
+
+Who you met, where, and whether the tie is drifting. A reality check that tells you when to invest and when to stop.
+
+## Slide 5
+**Follow-ups, drafted**
+
+Six tones, a why-it-works, and an honest risk level. You send it from your own apps — Orbit never sends anything.
+
+## Slide 6
+**Reps, counted**
+
+Left the apartment. Asked one question. Sent one follow-up. A training log, not a game.
+
+## Slide 7
+**What it will never be**
+
+No feed. No profiles. No matching. No AI companion. Your data stays on your device.
+
+## Slide 8
+**The 30-day rebuild runs on top**
+
+Four weeks: leave the apartment, start conversations, follow up, build cadence.
+
+## Slide 9
+**Free beta. No account.**
+
+Two minutes to your first 7-day plan.
+
+_Link in bio_

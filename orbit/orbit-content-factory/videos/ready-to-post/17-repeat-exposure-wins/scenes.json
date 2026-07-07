@@ -1,0 +1,35 @@
+[
+  {
+    "text": "You've tried 15 different events\nthis year.",
+    "seconds": 3.5,
+    "big": true
+  },
+  {
+    "text": "How many did you try *twice*?",
+    "seconds": 3,
+    "register": "mirror"
+  },
+  {
+    "text": "Novelty is a treadmill:",
+    "sub": "every night starts at stranger-zero.",
+    "seconds": 4.5
+  },
+  {
+    "text": "Repetition compounds:",
+    "sub": "same room, same faces,\nfamiliarity doing the work.",
+    "seconds": 5
+  },
+  {
+    "text": "The psychology is boring and real:",
+    "sub": "we like people we've *seen before*.",
+    "seconds": 4.5
+  },
+  {
+    "text": "Pick one thing.\nGo three times.",
+    "seconds": 3.5
+  },
+  {
+    "text": "Link in bio.",
+    "seconds": 2.5
+  }
+]

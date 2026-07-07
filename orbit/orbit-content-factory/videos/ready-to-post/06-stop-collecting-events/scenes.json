@@ -1,0 +1,36 @@
+[
+  {
+    "text": "Be honest.",
+    "seconds": 2,
+    "big": true
+  },
+  {
+    "text": "How many events are saved\non your phone right now?",
+    "seconds": 3.5
+  },
+  {
+    "text": "Saving feels like progress.",
+    "sub": "It's not. It's *research cosplay*.",
+    "seconds": 4,
+    "register": "mirror"
+  },
+  {
+    "text": "You added 4 events this month\nand attended none.",
+    "sub": "The list is where intentions go to age.",
+    "seconds": 5,
+    "register": "mirror"
+  },
+  {
+    "text": "New rule: you can't save an event\nwithout deciding on the last one.",
+    "seconds": 4.5
+  },
+  {
+    "text": "One decision beats\nten bookmarks.",
+    "seconds": 3.5
+  },
+  {
+    "text": "Link in bio.",
+    "sub": "Orbit makes you commit to one.",
+    "seconds": 3
+  }
+]

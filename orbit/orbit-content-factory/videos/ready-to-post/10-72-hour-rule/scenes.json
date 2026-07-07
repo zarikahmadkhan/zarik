@@ -1,0 +1,39 @@
+[
+  {
+    "text": "The 72-hour rule:",
+    "seconds": 2.5,
+    "big": true
+  },
+  {
+    "text": "Follow up within 3 days\nof meeting someone.",
+    "sub": "Or accept you probably never will.",
+    "seconds": 4.5
+  },
+  {
+    "text": "Day 1: they remember you clearly.",
+    "seconds": 3
+  },
+  {
+    "text": "Day 3: still warm.\nNo reintroduction needed.",
+    "seconds": 3.5
+  },
+  {
+    "text": "Week 2+: you're a stranger\nwith shared trivia.",
+    "seconds": 3.5,
+    "register": "mirror"
+  },
+  {
+    "text": "The message can be five words.",
+    "sub": "“Good meeting you at [place].”",
+    "seconds": 4
+  },
+  {
+    "text": "Timing beats wording.\n*Every time.*",
+    "seconds": 3.5
+  },
+  {
+    "text": "Try the *7-day plan*.",
+    "sub": "Link in bio.",
+    "seconds": 3
+  }
+]

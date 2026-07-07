@@ -1,0 +1,36 @@
+[
+  {
+    "text": "Most adult friendships\ndon't end in a fight.",
+    "seconds": 4,
+    "big": true
+  },
+  {
+    "text": "They end in a\nrescheduled coffee.",
+    "seconds": 3.5,
+    "register": "mirror"
+  },
+  {
+    "text": "“We should catch up soon”\n→ six months of nothing.",
+    "seconds": 4,
+    "register": "mirror"
+  },
+  {
+    "text": "Nobody chose to end it.",
+    "sub": "Nobody chose to continue it either.",
+    "seconds": 4.5
+  },
+  {
+    "text": "Friendship is a *default* problem.",
+    "sub": "Silence is the default. Contact is a choice.",
+    "seconds": 5
+  },
+  {
+    "text": "One message today\nto someone drifting.",
+    "sub": "No apology for the gap. Just hello.",
+    "seconds": 4.5
+  },
+  {
+    "text": "Link in bio.",
+    "seconds": 2.5
+  }
+]

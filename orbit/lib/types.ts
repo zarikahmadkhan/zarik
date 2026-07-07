@@ -320,6 +320,9 @@ export interface PricingTier {
 export interface AppData {
   schemaVersion: number;
   mode: AppMode;
+  // Client-trusted until accounts exist; set by the checkout success
+  // redirect. Real entitlement moves server-side with Supabase.
+  tier: "free" | "pro" | "premium";
   profile: UserProfile | null;
   events: OrbitEvent[];
   people: Person[];

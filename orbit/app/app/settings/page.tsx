@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   useAppData,
   exportAppData,
@@ -9,8 +9,25 @@ import {
 } from "@/lib/storage";
 
 export default function SettingsPage() {
-  const { data, loaded, replace } = useAppData();
+  const { data, loaded, replace, update } = useAppData();
   const [status, setStatus] = useState<string | null>(null);
+
+  // Checkout success redirect lands here with ?checkout=success&tier=...
+  // Client-trusted entitlement until accounts exist (see STRIPE.md).
+  useEffect(() => {
+    if (!loaded) return;
+    const params = new URLSearchParams(window.location.search);
+    const tier = params.get("tier");
+    if (
+      params.get("checkout") === "success" &&
+      (tier === "pro" || tier === "premium")
+    ) {
+      update((d) => ({ ...d, tier }));
+      window.history.replaceState({}, "", "/app/settings");
+      setStatus(`Welcome to ${tier === "pro" ? "Pro" : "Premium"} — everything is unlocked.`);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loaded]);
   const [error, setError] = useState<string | null>(null);
   const [confirmDelete, setConfirmDelete] = useState(false);
   const fileInput = useRef<HTMLInputElement>(null);
@@ -68,6 +85,16 @@ export default function SettingsPage() {
   return (
     <section>
       <h1 className="text-2xl font-semibold">Settings</h1>
+
+      <div className="card mt-4">
+        <h2 className="font-medium">Plan</h2>
+        <p className="mt-1 text-sm text-fog-400">
+          You&rsquo;re on{" "}
+          <span className="capitalize text-fog-50">{data?.tier ?? "free"}</span>
+          {(data?.tier ?? "free") === "free" &&
+            " — the free tier covers the core loop."}
+        </p>
+      </div>
 
       <div className="card mt-4">
         <h2 className="font-medium">Your data</h2>

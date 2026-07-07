@@ -81,7 +81,7 @@ export default function ProgramPage() {
   const behind = missedCount >= 2;
 
   async function setDone(day: number, completed: boolean) {
-    if (day > FREE_DAYS && completed) {
+    if (day > FREE_DAYS && completed && (data?.tier ?? "free") === "free") {
       setShowUpgrade(true);
       return;
     }
@@ -188,7 +188,7 @@ export default function ProgramPage() {
                     {isToday && (
                       <span className="ml-2 text-xs text-moss-300">today</span>
                     )}
-                    {a.day > FREE_DAYS && (
+                    {a.day > FREE_DAYS && (data?.tier ?? "free") === "free" && (
                       <span className="ml-2 text-xs text-clay-300">pro</span>
                     )}
                   </p>

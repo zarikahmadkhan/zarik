@@ -167,6 +167,7 @@ export default function ReviewPage() {
       )}
 
       {/* Advanced review — mocked paid edge */}
+      {(data?.tier ?? "free") === "free" && (
       <div className="card mt-4 border-dashed border-ink-600 opacity-80">
         <p className="text-xs font-medium uppercase tracking-widest text-clay-300">
           Advanced review · Pro
@@ -183,6 +184,7 @@ export default function ReviewPage() {
           See what&rsquo;s in it
         </button>
       </div>
+      )}
 
       {showUpgrade && (
         <UpgradeModal

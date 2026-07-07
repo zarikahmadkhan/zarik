@@ -15,6 +15,7 @@ export function emptyAppData(): AppData {
   return {
     schemaVersion: SCHEMA_VERSION,
     mode: "demo",
+    tier: "free",
     profile: null,
     events: [],
     people: [],

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { tiers } from "@/lib/pricing";
+import CheckoutButton from "@/components/CheckoutButton";
 
 export const metadata = { title: "Pricing" };
 
@@ -52,14 +53,7 @@ export default function PricingPage() {
                 Start free
               </Link>
             ) : (
-              <button
-                type="button"
-                disabled
-                className="btn-secondary mt-4 cursor-not-allowed opacity-60"
-                title="Payments aren't wired up in v0.1"
-              >
-                Coming soon — v0.1 is free
-              </button>
+              <CheckoutButton tier={t.id} />
             )}
           </div>
         ))}

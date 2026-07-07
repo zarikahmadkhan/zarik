@@ -103,7 +103,9 @@ export default function TonightPage() {
   const [showUpgrade, setShowUpgrade] = useState(false);
 
   const profile = data?.profile ?? null;
-  const atFreeLimit = (data?.soloPlansUsedThisMonth ?? 0) >= 3;
+  const atFreeLimit =
+    (data?.tier ?? "free") === "free" &&
+    (data?.soloPlansUsedThisMonth ?? 0) >= 3;
 
   function generate() {
     if (atFreeLimit) {

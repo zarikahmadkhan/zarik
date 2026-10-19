@@ -6,7 +6,7 @@ _Last updated: 2026-10-19_
 
 | Item | State |
 |---|---|
-| Design (`DESIGN.md`) | PROPOSED; D1, D3, D4, D5, D9 approved (see `DECISIONS.md`) |
+| Design (`DESIGN.md`) | APPROVED: all decisions settled (see `DECISIONS.md`) |
 | Style reference | `mockups/reference/style-reference-v1.png` (from ChatGPT) is the visual target |
 | M1 Walkable timelines | **First pass done.** All four states (1984, baseline, A1, A2) walkable; NPCs talk; clock travel works; debug panel sets the past. Screens in `docs/screens/`. |
 | M2 Full loop, scripted parser | Not started |
@@ -38,4 +38,4 @@ Larger distinct characters (16×24, silhouettes carry across ages: Mara's bun, D
 **Input handling:** none yet. M2 adds a **scripted parser** (synonyms + patterns over a closed intent schema) — not free-form understanding; it must be labelled as such.
 
 ## Next step
-User reviews the M1 screens. Then M2: intervention box, scripted parser, rules, time budget, journal, interiors.
+Move to the dedicated repo (D10: waiting on the user to create it; history is on branch `lantern-night-export` in `zarik`). Then M2: intervention box, scripted parser, rules, time budget, journal, interiors.

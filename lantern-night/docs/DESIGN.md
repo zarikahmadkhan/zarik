@@ -9,7 +9,7 @@ Core loop: explore a place → travel into its past → type an intervention →
 
 ## 0. Premise (one paragraph)
 
-Gullhaven, a small fictional harbour town. In the present, the ferry terminal is boarded up and a plaque blames the 1984 "Lantern Night disaster" on the ferry's engineer. The player finds the stopped Harbour Clock in the square; touching it sends them to 8:00 PM on Lantern Night 1984, one hour before the festival crossing. Only the player and what they *know* travel through time — no objects.
+Bitternhaven, a small fictional harbour town. In the present, the ferry terminal is boarded up and a plaque blames the 1984 "Lantern Night disaster" on the ferry's engineer. The player finds the stopped Harbour Clock in the square; touching it sends them to 8:00 PM on Lantern Night 1984, one hour before the festival crossing. Only the player and what they *know* travel through time — no objects.
 
 **Characters (same three people in every timeline, aged ~42 years in the present):**
 
@@ -94,7 +94,7 @@ One Tiled map (~48×28 tiles at 16 px), shared base geometry, with per-timeline 
 | Chandlery | Locked stockroom | Gone | Open, crate inside | Gone |
 | Terminal / slip | Ticket booth (Dell), *Marigold* + engine room (Mara) | Boarded, slip fenced | Gated, slip empty | Open, Mara inside, *Marigold* boardable |
 
-**Interactions:** walk (arrows/WASD); `E` = look/talk (free, authored lines, adds journal facts); `T` = intervene (opens text box; targets whatever is nearby; costs 15 in-world minutes); clock = travel; `J` = journal.
+**Interactions:** walk (arrows/WASD); `E` = look/talk (free, authored lines, adds journal facts); `I` = intervene (opens text box; targets whatever is nearby; costs 15 in-world minutes); clock = travel; `J` = journal.
 **Time budget in 1984:** arrive 8:00, horn at 9:00 → up to 4 interventions; talking and walking are free. Each trip resets 1984 and **replaces** the previous intervention (see D3).
 
 Content budget: ~3 maps-worth of deltas, 6 character sprites (3 people × 2 ages), ~60 authored lines, ~25 intervention rules.
